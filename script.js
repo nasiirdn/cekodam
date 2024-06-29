@@ -25,9 +25,11 @@ function checkKhodam () {
     } else {
         resultDiv.innerHTML = `<p style='color: red'; >${name}, maaf anda tidak memiliki khodam. </p>`
     }
+    checkButton.disabled = true;
 }
 
 function resetForm() {
     document.getElementById('nameInput').value = '';
     document.getElementById('result').innerHTML = '';
+    document.getElementById('checkButton').disabled = false;
 }
